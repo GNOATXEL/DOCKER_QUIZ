@@ -76,3 +76,25 @@ Ce qui reste à faire :
 
 * Modifier une association (modification des rôles, par exemple).
 * rechercher un utilisateur ou une association par son id
+
+```mermaid
+graph TB
+
+    subgraph Front-end
+        front --> Nginx
+    end
+
+    sq[Client] <-->|HTTP| Front-end
+
+    
+Front-end <--HTTP-->Back
+
+Back <--TCP HTTP--> a("BDD (MariaDB)")
+Back ----> b("MOM (Rabbit mQ)")
+b --HTTP-->Quarkus
+Quarkus --HTTP--> c("notification service")
+c --TCP--> d(Serveur mail)
+d --HTTP--> sq[Client]
+
+
+```
