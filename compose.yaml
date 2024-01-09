@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  backend:
+    image: back
+    ports:
+      - "3000:3000"  # Port du conteneur backend
+    networks:
+      - my-net
+
+  frontend:
+    image: front
+    ports:
+      - "4200:4200"  # Port du conteneur frontend
+    networks:
+      - my-net
+
+
+  database:
+    image: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: mdp
+    ports:
+      - "3306:3306"
+    container_name: base_de_donne  # Nom du conteneur
+
+networks:
+  my-net:
+    external: true

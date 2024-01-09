@@ -17,15 +17,13 @@ import {JwtService} from "@nestjs/jwt";
 
 @Module({
   imports: [
-      TypeOrmModule.forRoot({
-          type: 'sqlite',
-              database: 'mydatabase.db',
-              entities: [
-                  User,
-                  Association,
-                  Role,
-                  Minute
-              ],
+          TypeOrmModule.forRoot({
+              type: 'mysql',
+              host: 'base_de_donne',
+              port: 3306,
+              password: 'mdp',
+              database: 'votre_base_de_donnees',
+              entities: [User, Association, Role, Minute],
               synchronize: true,
       }),
       UsersModule,
