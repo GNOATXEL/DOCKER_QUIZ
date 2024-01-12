@@ -61,6 +61,31 @@ export class AssociationsDetailsComponent implements OnInit {
 
   }
 
+  forceRefresh(): void {
+    this.router.navigateByUrl('/', {skipLocationChange: true}).then(() => {
+      this.router.navigateByUrl('/associations/'+this.assoId);
+    });
+  }
+
+  editName(){
+    const id = this.assoId
+    const name: string = (document.getElementById('name') as HTMLInputElement).value;
+    this.api.put({
+      endpoint: '/associations/'+id,
+      data: {name}
+    })
+    this.forceRefresh()
+  }
+ajoutMembre(){
+    const id = this.assoId
+  const nameMembre: string = (document.getElementById('nameMember') as HTMLInputElement).value;
+  this.api.put({
+    endpoint: '/associations/'+id,
+    data: {}
+  })
+  this.forceRefresh()
+}
+
 
   delete(id:number){
     console.log('delete')

@@ -2,25 +2,35 @@
   <app-nav></app-nav>
 </div>
 
-<table mat-table [dataSource]="dataSourcent" class="mat-elevation-z8">
-
-  <ng-container matColumnDef="name">
-    <th mat-header-cell *matHeaderCellDef> Name </th>
-    <td mat-cell *matCellDef="let asso"> {{asso.name}} </td>
+<div class="custom-table">
+  <div class="header-row">
+    <div class="header-cell">Name</div>
+    <div class="header-cell"></div>
+  </div>
+  <ng-container *ngFor="let asso of dataSourcent" class="data-rows">
+    <div class="data-row">
+      <div class="data-cell">{{ asso.name }}</div>
+      <div class="data-cell">
+        <button (click)="delete(asso.id)">🗑️</button>
+      </div>
+    </div>
   </ng-container>
-
-
-  <ng-container matColumnDef="deletion">
-    <td mat-cell *matCellDef="let asso"> <button (click)="delete(asso.id)">🗑️</button> </td>
-  </ng-container>
-
-  <tr mat-header-row *matHeaderRowDef="displayedH"></tr>
-  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-</table>
-
-<div>Utilisateurs de l'association</div>
+</div>
+<div class="centrer">
+<div class="input-container">
+  <input type="text" id="name" placeholder="Input" />
+  <a (click)="editName()"><button>Edit Name</button></a>
+</div>
+</div>
+<div class="title">Utilisateurs de l'association</div>
+<div class="centrer">
+<div class="input-container">
+  <input type="text" id="nameMember" placeholder="Input" />
+  <a (click)="ajoutMembre()"><button>Ajout d'un membre</button></a>
+</div>
+</div>
 <div>
-  <table mat-table [dataSource]="dataSourcentU" class="mat-elevation-z8">
+  <table mat-table [dataSource]="dataSourcentU" class="container">
 
     <ng-container matColumnDef="id">
       <td mat-cell *matCellDef="let aArray">
@@ -46,11 +56,11 @@
       </td>
     </ng-container>
 
-    <ng-container matColumnDef="add">
-      <label for="id">ID</label>
-      <input type="id" id="id" placeholder="id" />
-      <a (click)="add()"><button>Add</button></a>
-    </ng-container>
+<!--    <ng-container matColumnDef="add">-->
+<!--      <label for="id">ID</label>-->
+<!--      <input type="id" id="id" placeholder="id" />-->
+<!--      <a (click)="add()"><button>Add</button></a>-->
+<!--    </ng-container>-->
 
     <tr mat-row *matRowDef="let row; columns: displayedColumns2;">
     </tr>
@@ -58,9 +68,9 @@
   </table>
 </div>
 
-<div>Minutes de l'association</div>
+<div class="title">Minutes de l'association</div>
 <div>
-  <table mat-table [dataSource]="dataSourcentM" class="mat-elevation-z8">
+  <table mat-table [dataSource]="dataSourcentM"  class="container">
 
     <ng-container matColumnDef="id">
       <td mat-cell *matCellDef="let aArray">

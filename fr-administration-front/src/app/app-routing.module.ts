@@ -8,6 +8,7 @@ import {AssociationsListComponent} from "./associations-list/associations-list.c
 import {UsersDetailsComponent} from "./users-details/users-details.component";
 import {AssociationsDetailsComponent} from "./associations-details/associations-details.component";
 import {SearchComponent} from "./search/search.component";
+import {IdolComponent} from "./idol/idol.component";
 
 
 
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path: '', redirectTo:'login', pathMatch:'full'},
   {path: 'users/:id', component: UsersDetailsComponent,canActivate: [AuthGuard] },
   {path: 'associations/:id', component: AssociationsDetailsComponent,canActivate: [AuthGuard] },
-  {path: 'search/:query', component: SearchComponent,canActivate: [AuthGuard] }
+  {path: 'search/:query', component: SearchComponent,canActivate: [AuthGuard] },
+  {path: 'idol', component: IdolComponent,canActivate: [AuthGuard] }
 ];
 
 

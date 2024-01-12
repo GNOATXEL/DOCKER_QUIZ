@@ -48,6 +48,51 @@ export class UsersDetailsComponent implements OnInit {
     this.router.navigateByUrl("/associations/"+id);
 
   }
+  forceRefresh(): void {
+    this.router.navigateByUrl('/', {skipLocationChange: true}).then(() => {
+      this.router.navigateByUrl('/users/'+this.userId);
+    });
+  }
+
+  editLastName(){
+    const id = this.userId
+    const lastname: string = (document.getElementById('lastname') as HTMLInputElement).value;
+    this.api.put({
+      endpoint: '/users/'+id,
+      data: {lastname}
+    })
+    this.forceRefresh()
+  }
+
+  editFirstName(){
+    const id = this.userId
+    const firstname: string = (document.getElementById('firstname') as HTMLInputElement).value;
+    this.api.put({
+      endpoint: '/users/'+id,
+      data: {firstname}
+    })
+    this.forceRefresh()
+  }
+
+  editPassword(){
+    const id = this.userId
+    const password: string = (document.getElementById('password') as HTMLInputElement).value;
+    this.api.put({
+      endpoint: '/users/'+id,
+      data: {password}
+    })
+    this.forceRefresh()
+  }
+  editAge(){
+    const id = this.userId
+    const age: string = (document.getElementById('age') as HTMLInputElement).value;
+    this.api.put({
+      endpoint: '/users/'+id,
+      data: {age}
+    })
+    this.forceRefresh()
+  }
+
 
   delete(id:number){
     console.log('delete')

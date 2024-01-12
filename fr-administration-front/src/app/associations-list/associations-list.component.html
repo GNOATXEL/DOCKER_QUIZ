@@ -2,30 +2,23 @@
   <app-nav></app-nav>
 </div>
 
-<div>
+<div class="input-container">
   <label for="name">Name</label>
   <input type="name" id="name" placeholder="name" />
   <a (click)="create()"><button>Create</button></a>
 </div>
 
-<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-
-  <ng-container matColumnDef="id">
-    <th mat-header-cell *matHeaderCellDef> id </th>
-    <td mat-cell *matCellDef="let association">  <button (click)="idRedirect(association.id)">{{association.id}} </button> </td>
-  </ng-container>
-
-  <ng-container matColumnDef="name">
-    <th mat-header-cell *matHeaderCellDef> Name </th>
-    <td mat-cell *matCellDef="let association"> {{association.name}} </td>
-  </ng-container>
-
-  <ng-container matColumnDef="delete">
-    <td mat-cell *matCellDef="let user"> <button (click)="delete(user.id)">🗑️</button> </td>
-  </ng-container>
-
-  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-  <tr mat-row *matRowDef="let row; columns: displayedColumns1;"></tr>
-</table>
-
+<div class="custom-table mat-elevation-z8">
+  <div class="data-rows">
+    <div class="data-row" *ngFor="let association of dataSource">
+      <div class="data-cell">
+        <button (click)="idRedirect(association['id'])">{{ association['id'] }}</button>
+      </div>
+      <div class="data-cell">{{ association['name'] }}</div>
+      <div class="data-cell">
+        <button (click)="delete(association['id'])">🗑️</button>
+      </div>
+    </div>
+  </div>
+</div>
 

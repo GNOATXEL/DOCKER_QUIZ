@@ -17,6 +17,7 @@ import { UsersDetailsComponent } from './users-details/users-details.component';
 import {FormsModule} from "@angular/forms";
 import { AssociationsDetailsComponent } from './associations-details/associations-details.component';
 import { SearchComponent } from './search/search.component';
+import {IdolComponent} from "./idol/idol.component";
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +29,7 @@ import { SearchComponent } from './search/search.component';
     UsersDetailsComponent,
     AssociationsDetailsComponent,
     SearchComponent,
+    IdolComponent,
   ],
   imports: [
     BrowserModule,

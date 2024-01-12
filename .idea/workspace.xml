@@ -4,11 +4,61 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecd7313d-7386-49ae-bacf-b46222505ab2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="ecd7313d-7386-49ae-bacf-b46222505ab2" name="Changes" comment="SMQ">
+      <change afterPath="$PROJECT_DIR$/fr-administration-front/src/app/idol/idol.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fr-administration-front/src/app/idol/idol.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fr-administration-front/src/app/idol/idol.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fr-administration-front/src/app/idol/idol.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fr-administration/src/song/song.controller.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fr-administration/src/song/song.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fr-administration/src/song/song.entity.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fr-administration/src/song/song.input.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fr-administration/src/song/song.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fr-administration/src/song/song.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fr-administration/src/song/song.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/app/associations-details/associations-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/app/associations-details/associations-details.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/app/associations-details/associations-details.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/app/associations-details/associations-details.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/app/associations-details/associations-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/app/associations-details/associations-details.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/app/associations-list/associations-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/app/associations-list/associations-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/app/associations-list/associations-list.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/app/associations-list/associations-list.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/app/login/login.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/app/login/login.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/app/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/app/nav/nav.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/app/nav/nav.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/app/nav/nav.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/app/nav/nav.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/app/nav/nav.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/app/nav/nav.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/app/profile/profile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/app/profile/profile.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/app/profile/profile.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/app/profile/profile.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/app/search/search.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/app/search/search.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/app/search/search.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/app/search/search.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/app/users-details/users-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/app/users-details/users-details.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/app/users-details/users-details.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/app/users-details/users-details.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/app/users-details/users-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/app/users-details/users-details.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/app/users-list/users-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/app/users-list/users-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/app/users-list/users-list.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/app/users-list/users-list.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/environments/environment.development.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/environments/environment.development.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/main.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/main.server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/services/api-helper.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/services/api-helper.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/tsconfig.app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/tsconfig.spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/tsconfig.spec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration/mydatabase.db" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration/mydatabase.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fr-administration/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration/src/associations/associations.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration/src/associations/associations.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,28 +80,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "openjdk-21",
-    "last_opened_file_path": "C:/Users/axel/Git/wm-tp1",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/axel/Git/tp-al/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "ts.external.directory.path": "C:\\Users\\axel\\Git\\tp-al\\fr-administration\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-21&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/axel/Git/wm-tp1&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/axel/Git/tp-al/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\axel\\Git\\tp-al\\fr-administration\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -63,11 +113,27 @@
       <workItem from="1704698979485" duration="2000" />
       <workItem from="1704703424950" duration="4044000" />
       <workItem from="1704735012064" duration="15000" />
+      <workItem from="1704800378607" duration="100000" />
+      <workItem from="1705069249023" duration="307000" />
     </task>
+    <task id="LOCAL-00001" summary="compose">
+      <option name="closed" value="true" />
+      <created>1704800439046</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704800439046</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="compose" />
+    <MESSAGE value="SMQ" />
+    <option name="LAST_COMMIT_MESSAGE" value="SMQ" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

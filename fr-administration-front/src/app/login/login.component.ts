@@ -29,7 +29,7 @@ export class LoginComponent {
         console.log(response)
         this.router.navigateByUrl('/profile');
       }).catch((reason) => {
-        alert("amogus")
+        alert("Votre mot de passe ou identifiant est incorrect")
       });
     //}else {
     //  this.router.navigateByUrl('/users');

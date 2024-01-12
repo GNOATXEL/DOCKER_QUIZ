@@ -1,0 +1,328 @@
+.video-container {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 288px; /* Vous pouvez ajuster cette valeur selon votre mise en page */
+  width: 512px;
+  font-size: 50px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.video {
+  border:none;
+}
+
+
+/* Styles pour les divs */
+div {
+  margin-bottom: 10px;
+}
+
+/* Styles pour les boutons */
+
+
+/* Styles pour aligner les boutons horizontalement */
+.buttons {
+  display: flex;
+  margin-left: 33%;
+}
+
+
+/* Styles pour le bouton */
+.buttons button {
+  padding: 12px 20px; /* Ajustez selon vos besoins */
+  background-color: #8a2be2; /* Couleur violette */
+  color: white; /* Texte en blanc */
+  border: none;
+  border-radius: 6px;
+  font-size: 16px; /* Taille de police */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Animation de transition pour un effet hover */
+}
+
+/* Effet hover */
+.buttons button:hover {
+  background-color: #6a1e9b; /* Nouvelle couleur violette au survol */
+}
+
+.answer {
+  //font-family: 'Courier New', monospace;
+  border: 2px solid #8a2be2; /* Bordure violette */
+  padding: 10px; /* Espacement intérieur */
+  display: inline-block; /* Pour s'adapter à la largeur du contenu */
+  min-width: 270px; /* Taille minimale */
+  max-width: 300px; /* Taille minimale */
+  min-height: 35px; /* Taille minimale */
+  box-sizing: border-box; /* Inclut la bordure dans la taille */
+  font-weight: bold;
+  font-color: black;
+  text-align: center;
+  opacity: 50%;
+  margin-left: 20px; /* Déplace l'élément vers la droite autant que possible */
+  border-radius: 8px; /* Coins arrondis */
+  transition: min-width 0.3s ease; /* Animation de transition pour le changement de largeur */
+}
+
+.group {
+  padding: 12px 20px; /* Ajustez selon vos besoins */
+  background-color: #8a2be2; /* Couleur violette */
+  color: white; /* Texte en blanc */
+  margin-left: 20px;
+  text-align: center;
+  //border: none;
+  min-width: 100px;
+  border-radius: 6px;
+  font-size: 16px; /* Taille de police */
+  //cursor: pointer;
+  transition: background-color 0.3s ease; /* Animation de transition pour un effet hover */
+}
+
+.nogizaka {
+  background-color: #8a2be2;
+  color: white;
+  border-color: #8a2be2;
+}
+
+.sakurazaka {
+  background-color: white;
+  color: pink;
+  border-style: solid;
+  border-color: #cccccc;
+}
+
+.hinatazaka {
+  background-color: lightskyblue;
+  color: white;
+  border-color: lightskyblue;
+}
+
+.keyakizaka {
+  background-color: lightgreen;
+  color: white;
+  border-color: lightgreen;
+}
+
+.iz {
+  background-color: pink;
+  color: orange;
+  border-style: solid;
+  //border-width: 1px;
+  border-color: purple;
+}
+
+.sakamichiakb {
+  background-color: pink;
+  color: white;
+  border-style: solid;
+  //border-width: 1px;
+  border-color: purple;
+}
+
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+
+/* Styles pour le champ de saisie */
+input[type="text"] {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 200px;
+}
+
+
+p {
+  display: block; /* Change le comportement en bloc pour aligner les paragraphes les uns sous les autres */
+  margin-bottom: 5px;
+  font-family: Arial, sans-serif;
+  margin-left: 10px; /* Alignement à gauche */
+}
+
+
+
+/* Style pour cacher un élément */
+.hidden {
+  display: none;
+}
+
+.video.hidden {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc; /* Bordure pour maintenir le cadre */
+  box-sizing: border-box; /* Inclure la bordure dans la taille */
+}
+
+.inputvalue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.inputvalue p {
+  text-align: center; /* Centre le contenu horizontalement */
+  border: 2px solid #8a2be2; /* Bordure violette */
+  padding: 5px 10px; /* Espacement intérieur */
+  display: inline-block; /* Pour s'adapter à la largeur du contenu */
+  min-width: 100px; /* Taille minimale */
+  min-height: 35px; /* Taille minimale */
+  box-sizing: border-box; /* Inclut la bordure dans la taille */
+  color: #8c4f73; /* Texte blanc */
+  opacity: 50%;
+  margin-left: 0px;
+  border-radius: 8px; /* Coins arrondis */
+}
+
+.guesses {
+  display: flex;
+  justify-content: left;
+}
+.guesses p {
+  font-family: 'Courier New', monospace;
+  text-align: center; /* Centre le contenu horizontalement */
+  border: 2px solid #8a2be2; /* Bordure violette */
+  padding: 10px; /* Espacement intérieur */
+  display: inline-block; /* Pour s'adapter à la largeur du contenu */
+  min-width: 100px; /* Taille minimale */
+  min-height: 35px; /* Taille minimale */
+  box-sizing: border-box; /* Inclut la bordure dans la taille */
+  font-weight: bold;
+  opacity: 50%;
+  margin-left: 0px;
+  border-radius: 8px; /* Coins arrondis */
+}
+
+.result {
+  display: flex;
+  justify-content: left;
+}
+.result p {
+  font-family: 'Courier New', monospace;
+  border: 2px solid #8a2be2; /* Bordure violette */
+  padding: 10px; /* Espacement intérieur */
+  display: inline-block; /* Pour s'adapter à la largeur du contenu */
+  min-width: 200px; /* Taille minimale */
+  min-height: 35px; /* Taille minimale */
+  box-sizing: border-box; /* Inclut la bordure dans la taille */
+  font-weight: bold;
+  opacity: 50%;
+  border-radius: 8px; /* Coins arrondis */
+  margin-left: 10px;
+}
+
+/* Pour le texte en vert */
+.green p{
+  font-family: 'Courier New', monospace;
+  border: 2px solid #8a2be2; /* Bordure violette */
+  padding: 10px; /* Espacement intérieur */
+  display: inline-block; /* Pour s'adapter à la largeur du contenu */
+  min-width: 200px; /* Taille minimale */
+  min-height: 35px; /* Taille minimale */
+  box-sizing: border-box; /* Inclut la bordure dans la taille */
+  font-weight: bold;
+  opacity: 50%;
+  border-radius: 8px; /* Coins arrondis */
+  margin-left: 10px;
+  background-color:lightgreen;
+  color: white;
+}
+
+/* Pour le texte en rouge */
+.red p{
+  font-family: 'Courier New', monospace;
+  border: 2px solid #8a2be2; /* Bordure violette */
+  padding: 10px; /* Espacement intérieur */
+  display: inline-block; /* Pour s'adapter à la largeur du contenu */
+  min-width: 200px; /* Taille minimale */
+  min-height: 35px; /* Taille minimale */
+  box-sizing: border-box; /* Inclut la bordure dans la taille */
+  font-weight: bold;
+  opacity: 50%;
+  border-radius: 8px; /* Coins arrondis */
+  margin-left: 10px;
+  background-color:lightcoral;
+  color: white;
+}
+
+
+.blabla {
+  display: flex;
+  margin-left: 10px;
+}
+
+
+ul.suggestions {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: calc(100% + 5px); /* Place la liste juste en dessous de l'input */
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* Arrière-plan blanc pour les suggestions */
+  z-index: 1000; /* Assure que la liste apparaît au-dessus des autres éléments si nécessaire */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul.suggestions li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+ul.suggestions li:hover {
+  background-color: #f0f0f0; /* Couleur de fond au survol */
+}
+
+ul.suggestions button {
+  padding: 5px 10px; /* Ajustez selon vos besoins */
+  background-color: #f5f5f5; /* Couleur violette */
+  color: purple; /* Texte en blanc */
+  border-style: groove;
+  border-color: #cccccc;
+  border-radius: 6px;
+  font-size: 15px; /* Taille de police */
+  cursor: pointer;
+}
+
+
+.blabla button {
+  padding: 10px 16px; /* Ajustez selon vos besoins */
+  margin-left: 20px;
+  text-align: center;
+  min-width: 50px;
+  border-radius: 6px;
+  font-size: 14px; /* Taille de police */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Animation de transition pour un effet hover */
+  opacity: 50%;
+}
+
+.buttongs {
+  margin-left: 550px;
+
+}
+
+.buttongs button.actives {
+  border-width: 2px;
+  border-color: #5d5d5d;
+  opacity: 100%;
+}
+
+.buttongs button.active {
+  border-width: 2px;
+  opacity: 100%;
+}

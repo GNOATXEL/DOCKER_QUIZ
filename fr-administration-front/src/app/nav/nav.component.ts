@@ -35,6 +35,10 @@ export class NavComponent {
     this.route.navigateByUrl("/profile");
   }
 
+  idol(): void{
+    this.route.navigateByUrl("/idol");
+  }
+
   search(): void{
     this.action(this.inputValue)
   }

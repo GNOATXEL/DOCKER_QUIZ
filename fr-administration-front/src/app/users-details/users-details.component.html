@@ -2,53 +2,43 @@
   <app-nav></app-nav>
 </div>
 
-<table mat-table [dataSource]="dataSourcent" class="mat-elevation-z8">
+<div class="custom-table">
+  <!-- En-têtes de colonnes -->
+  <div class="header-row">
+    <div class="header-cell">Lastname</div>
+    <div class="header-cell">Firstname</div>
+    <div class="header-cell">Age</div>
+    <div class="header-cell"></div>
+  </div>
 
-  <ng-container matColumnDef="lastname">
-    <th mat-header-cell *matHeaderCellDef> Lastname </th>
-    <td mat-cell *matCellDef="let user"> {{user.lastname}} </td>
-  </ng-container>
-
-  <ng-container matColumnDef="firstname">
-    <th mat-header-cell *matHeaderCellDef> Firstname </th>
-    <td mat-cell *matCellDef="let user"> {{user.firstname}} </td>
-  </ng-container>
-
-  <ng-container matColumnDef="age">
-    <th mat-header-cell *matHeaderCellDef> Age </th>
-    <td mat-cell *matCellDef="let user"> {{user.age}} </td>
-  </ng-container>
-
-  <ng-container matColumnDef="deletion">
-    <td mat-cell *matCellDef="let user"> <button (click)="delete(user.id)">🗑️</button> </td>
-  </ng-container>
-
-  <tr mat-header-row *matHeaderRowDef="displayedH"></tr>
-  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-</table>
-
-<div>Associations de l'utilisateur</div>
-<div>
-  <table mat-table [dataSource]="dataSourcentA" class="mat-elevation-z8">
-
-    <ng-container matColumnDef="id">
-      <td mat-cell *matCellDef="let aArray">
-        <div *ngFor="let item of aArray">
-          <button (click)="idRedirect(item.id)">{{item.id}}</button>
-        </div>
-      </td>
-    </ng-container>
-
-    <ng-container matColumnDef="name">
-      <td mat-cell *matCellDef="let aArray">
-        <div *ngFor="let item of aArray">
-          {{ item.name }}
-        </div>
-      </td>
-    </ng-container>
-
-    <tr mat-row *matRowDef="let row; columns: displayedColumns2;">
-    </tr>
-
-  </table>
+  <!-- Lignes de données -->
+  <div class="data-rows">
+    <div class="data-row" *ngFor="let user of dataSourcent">
+      <div class="data-cell">{{ user.lastname }}</div>
+      <div class="data-cell">{{ user.firstname }}</div>
+      <div class="data-cell">{{ user.age }}</div>
+      <div class="data-cell"><button (click)="delete(user.id)">🗑️</button></div>
+    </div>
+  </div>
 </div>
+<div class="input-container">
+  <input type="text" id="lastname" placeholder="Input" />
+  <a (click)="editLastName()"><button>Edit Lastname</button></a>
+  <input type="text" id="firstname" placeholder="Input" />
+  <a (click)="editFirstName()"><button>Edit Firstname</button></a>
+  <input type="text" id="password" placeholder="Input" />
+  <a (click)="editPassword()"><button>Edit Password</button></a>
+  <input type="text" id="age" placeholder="Input" />
+  <a (click)="editAge()"><button>Edit Age</button></a>
+</div>
+
+<div class="custom-table2">
+  <div class="data-table">
+    <div class="data-row" *ngFor="let aArray of dataSourcentA">
+      <div class="data-cell" *ngFor="let item of aArray">
+        <button (click)="idRedirect(item.id)">{{ item.name }}</button>
+      </div>
+    </div>
+  </div>
+</div>
+

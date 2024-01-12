@@ -1,0 +1,72 @@
+<div>
+  <app-nav></app-nav>
+</div>
+<script src="https://www.youtube.com/iframe_api"></script>
+
+<div class="blabla">
+<div class="guesses">
+  <p>Points: {{ guesses }} / {{ total }}</p>
+</div>
+
+  <div [ngClass]="{'green': result === 'correct', 'red': result === 'wrong', 'result': result !=='correct' && result!=='wrong'}">
+    <p>Result: {{ result }}</p>
+  </div>
+
+  <div class="buttongs">
+    <button id="nogi" class="nogizaka" (click)="updateStatus(1)">Nogizaka46</button>
+    <button id="saku" class="sakurazaka" (click)="updateStatus(10)">Sakurazaka46</button>
+    <button id="hina" class="hinatazaka" (click)="updateStatus(100)">Hinatazaka46</button>
+    <button id="keya" class="keyakizaka" (click)="updateStatus(1000)">Keyakizaka46</button>
+  </div>
+</div>
+
+<div class="buttons">
+  <div>
+    <a *ngIf="!isStartClicked" (click)="start()"><button>Start</button></a>
+  </div>
+  <div>
+    <a *ngIf="!skippable" (click)="skip()"><button id="skip">Skip</button></a>
+  </div>
+  <div>
+    <a *ngIf="!isNextClicked" (click)="start()"><button id="next">Next</button></a>
+  </div>
+  <div class="answer">
+    <a *ngIf="!isNextClicked">Answer: {{ rightAnswer }}</a>
+  </div>
+  <div class="group" [ngClass]="{ 'nogizaka': group === 'Nogizaka46',
+   'sakurazaka': group === 'Sakurazaka46',
+    'hinatazaka': group === 'Hinatazaka46',
+    'keyakizaka': group === 'Keyakizaka46',
+    'iz': group === 'IZ4648',
+    'sakamichiakb': group === 'Sakamichi AKB',
+     }">
+    <a *ngIf="!isNextClicked" id="group">{{ group }}</a>
+  </div>
+</div>
+
+
+
+<div class="video-container">
+  <p id="countdownTimer" style="display: none;" class="video"></p>
+  <iframe allow="autoplay *; fullscreen *" allowfullscreen="true" class="video" width="512" height="288" src="" id="videoFrame"></iframe>
+</div>
+
+<script src="script.js"></script>
+
+<div class="inputvalue">
+<p>{{ answerValue }}</p>
+</div>
+
+<!--<div class="input-container">-->
+<!--<input type="text" [(ngModel)]="inputValue" (keyup.enter)="answer()" placeholder="answer">-->
+<!--</div>-->
+
+<div class="input-container">
+  <input #inputField type="text" [(ngModel)]="inputValue" placeholder="answer" (keyup.enter)="answer()" (input)="suggestNames()">
+  <ul class="suggestions" *ngIf="nameSuggestions.length > 0 && inputValue.length >= 3 && showSuggestions" >
+    <li *ngFor="let suggestion of nameSuggestions">
+      <button (click)="writeSuggestion(suggestion.name)">{{ suggestion.name }}</button>
+    </li>
+  </ul>
+</div>
+

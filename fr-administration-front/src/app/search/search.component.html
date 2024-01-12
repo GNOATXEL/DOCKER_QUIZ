@@ -2,88 +2,79 @@
   <app-nav></app-nav>
 </div>
 
-<div>Utilisateurs Trouvés</div>
-<div>
-  <table mat-table [dataSource]="dataSourcent" class="mat-elevation-z8">
+<div class="user-search-title">Utilisateurs Trouvés</div>
+<div class="user-container">
+  <div class="data-rows">
+  <div *ngFor="let aArray of dataSourcent" class ="data-row">
+    <div class="user-column">
+      <div class="column-header">ID</div>
+      <div *ngFor="let item of aArray" class="jpp2">
+        <button (click)="idRedirect(item.id)">{{item.id}}</button>
+      </div>
+    </div>
 
-    <ng-container matColumnDef="id">
-      <th mat-header-cell *matHeaderCellDef> ID </th>
-      <td mat-cell *matCellDef="let aArray">
-        <div *ngFor="let item of aArray">
-          <button (click)="idRedirect(item.id)">{{item.id}}</button>
-        </div>
-      </td>
-    </ng-container>
+    <div class="user-column">
+      <div class="column-header">LastName</div>
+      <div *ngFor="let item of aArray" class="data-row">
+        {{ item.lastname }}
+      </div>
+    </div>
 
-    <ng-container matColumnDef="lastname">
-      <th mat-header-cell *matHeaderCellDef> LastName </th>
-      <td mat-cell *matCellDef="let aArray">
-        <div *ngFor="let item of aArray">
-          {{ item.lastname }}
-        </div>
-      </td>
-    </ng-container>
+    <div class="user-column">
+      <div class="column-header">FirstName</div>
+      <div *ngFor="let item of aArray" class="data-row">
+        {{ item.firstname }}
+      </div>
+    </div>
 
-    <ng-container matColumnDef="firstname">
-      <th mat-header-cell *matHeaderCellDef> FirstName </th>
-      <td mat-cell *matCellDef="let aArray">
-        <div *ngFor="let item of aArray">
-          {{ item.firstname }}
-        </div>
-      </td>
-    </ng-container>
+    <div class="user-column">
+      <div class="column-header">Age</div>
+      <div *ngFor="let item of aArray" class="data-row">
+        {{ item.age }}
+      </div>
+    </div>
 
-    <ng-container matColumnDef="age">
-      <th mat-header-cell *matHeaderCellDef> Age </th>
-      <td mat-cell *matCellDef="let aArray">
-        <div *ngFor="let item of aArray">
-          {{ item.age }}
-        </div>
-      </td>
-    </ng-container>
-
-    <ng-container matColumnDef="delete">
-      <td mat-cell *matCellDef="let user"> <button (click)="delete(user.id)">🗑️</button> </td>
-    </ng-container>
-
-    <tr mat-header-row *matHeaderRowDef="displayedH"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns;">
-    </tr>
-
-  </table>
+    <div class="jpp">
+      <div class="column-header">DEL</div>
+      <div *ngFor="let user of aArray" class="data-row">
+        <button (click)="delete(user.id)">🗑️</button>
+      </div>
+    </div>
+  </div>
+  </div>
 </div>
 
-<div>Associations Trouvées</div>
-<div>
-  <table mat-table [dataSource]="dataSourcent2" class="mat-elevation-z8">
 
-    <ng-container matColumnDef="id">
-      <th mat-header-cell *matHeaderCellDef> ID </th>
-      <td mat-cell *matCellDef="let aArray">
-        <div *ngFor="let item of aArray">
-          <button (click)="idRedirect2(item.id)">{{item.id}}</button>
+
+
+
+<div class="user-search-title">Associations Trouvées</div>
+
+
+<div class="user-container">
+  <div class="data-rows">
+    <div *ngFor="let aArray of dataSourcent2" class ="data-row">
+      <div class="user-column">
+        <div class="column-header">ID</div>
+        <div *ngFor="let item of aArray" class="jpp2">
+          <button (click)="idRedirect(item.id)">{{item.id}}</button>
         </div>
-      </td>
-    </ng-container>
+      </div>
 
-    <ng-container matColumnDef="name">
-      <th mat-header-cell *matHeaderCellDef> Name </th>
-      <td mat-cell *matCellDef="let aArray">
-        <div *ngFor="let item of aArray">
+      <div class="user-column">
+        <div class="column-header">Name</div>
+        <div *ngFor="let item of aArray" class="data-row">
           {{ item.name }}
         </div>
-      </td>
-    </ng-container>
+      </div>
 
-
-    <ng-container matColumnDef="delete">
-      <td mat-cell *matCellDef="let user"> <button (click)="delete2(user.id)">🗑️</button> </td>
-    </ng-container>
-
-    <tr mat-header-row *matHeaderRowDef="displayedH2"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns2;">
-    </tr>
-
-  </table>
+      <div class="jpp">
+        <div class="column-header">DEL</div>
+        <div *ngFor="let user of aArray" class="data-row">
+          <button (click)="delete2(user.id)">🗑️</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 

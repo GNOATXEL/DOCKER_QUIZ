@@ -14,19 +14,25 @@ import { Minute } from './minutes/minute.entity';
 import {RolesController} from "./roles/roles.controller";
 import {AuthService} from "./auth/auth.service";
 import {JwtService} from "@nestjs/jwt";
+import {SongModule} from "./song/song.module";
+import {Song} from "./song/song.entity";
 
 @Module({
   imports: [
-          TypeOrmModule.forRoot({
-              type: 'mysql',
-              host: 'base_de_donne',
-              port: 3306,
-              password: 'mdp',
-              database: 'votre_base_de_donnees',
-              entities: [User, Association, Role, Minute],
+      TypeOrmModule.forRoot({
+          type: 'sqlite',
+              database: 'mydatabase.db',
+              entities: [
+                  User,
+                  Association,
+                  Role,
+                  Minute,
+                  Song
+              ],
               synchronize: true,
       }),
       UsersModule,
+      SongModule,
       AssociationsModule,
       AuthModule,
       RolesModule,
