@@ -17,7 +17,7 @@ services:
   frontend:
     build: './fr-administration-front'
     ports:
-      - "4200:4200"  # Port du conteneur frontend
+      - "8080:80"  # Port du conteneur frontend
     networks:
       - my-net
 
@@ -33,6 +33,19 @@ services:
     environment:
         MYSQL_ROOT_PASSWORD: secret
         MYSQL_DATABASE: mydatabase
+
+#  nginx:
+#    image: nginx:latest
+#    ports:
+#      - "80:80"
+#    networks:
+#      - my-net
+#    volumes:
+#      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+#    links:
+#      - backend
+#      - frontend
+
 
 
 volumes:

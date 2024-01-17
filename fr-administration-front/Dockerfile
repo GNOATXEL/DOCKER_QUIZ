@@ -1,13 +1,14 @@
-FROM node:18-alpine
-WORKDIR /src/app
-
-RUN npm install -g @angular/cli
-
+FROM node:latest as build-stage
+WORKDIR /app
 COPY package*.json ./
-
 RUN npm ci
-
 COPY . .
+RUN npm run build
 
-CMD ["ng", "serve","--host","0.0.0.0"]
-EXPOSE 4200
+FROM nginx:latest
+RUN mkdir /app
+COPY --from=build-stage /app/dist/fr-administration-front/ /app
+COPY nginx.conf /etc/nginx/nginx.conf
+USER nginx
+
+EXPOSE 80

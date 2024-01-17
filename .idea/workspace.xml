@@ -4,18 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecd7313d-7386-49ae-bacf-b46222505ab2" name="Changes" comment="SMQ">
-      <change afterPath="$PROJECT_DIR$/fr-administration/dataent.txt" afterDir="false" />
+    <list default="true" id="ecd7313d-7386-49ae-bacf-b46222505ab2" name="Changes" comment="db">
+      <change afterPath="$PROJECT_DIR$/fr-administration-front/nginx.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/core.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/frontend.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/proxy.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/app/idol/idol.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/app/idol/idol.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/app/idol/idol.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/app/idol/idol.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/app/idol/idol.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/app/idol/idol.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fr-administration/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fr-administration/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fr-administration/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fr-administration/src/song/song.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration/src/song/song.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fr-administration/src/song/song.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration/src/song/song.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration/src/main.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +59,12 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\axel\Git\tp-al\fr-administration-front" />
+      <recent name="C:\Users\axel\Git\tp-al" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -81,7 +84,8 @@
       <workItem from="1705095039470" duration="101000" />
       <workItem from="1705108532492" duration="11000" />
       <workItem from="1705259796736" duration="932000" />
-      <workItem from="1705260757265" duration="1345000" />
+      <workItem from="1705260757265" duration="2481000" />
+      <workItem from="1705512098109" duration="13538000" />
     </task>
     <task id="LOCAL-00001" summary="compose">
       <option name="closed" value="true" />
@@ -99,7 +103,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705069597862</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="db">
+      <option name="closed" value="true" />
+      <created>1705454702034</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705454702034</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,7 +121,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="compose" />
     <MESSAGE value="SMQ" />
-    <option name="LAST_COMMIT_MESSAGE" value="SMQ" />
+    <MESSAGE value="db" />
+    <option name="LAST_COMMIT_MESSAGE" value="db" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
