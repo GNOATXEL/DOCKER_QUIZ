@@ -2,28 +2,44 @@ version: '3'
 
 services:
   backend:
-    image: back
+    build: './fr-administration'
     ports:
       - "3000:3000"  # Port du conteneur backend
     networks:
       - my-net
+    environment:
+      MYSQL_HOST: mariadb
+      MYSQL_USER: root
+      MYSQL_PASSWORD: secret
+      MYSQL_DATABASE: mydatabase
+      MYSQL_PORT: 3306
 
   frontend:
-    image: front
+    build: './fr-administration-front'
     ports:
       - "4200:4200"  # Port du conteneur frontend
     networks:
       - my-net
 
 
-  database:
+  mariadb:
+    networks:
+      - my-net
     image: mariadb
-    environment:
-      MYSQL_ROOT_PASSWORD: mdp
+    volumes:
+      - mydatabase:/var/lib/mysql
     ports:
-      - "3306:3306"
-    container_name: base_de_donne  # Nom du conteneur
+        - "3306:3306"
+    environment:
+        MYSQL_ROOT_PASSWORD: secret
+        MYSQL_DATABASE: mydatabase
+
+
+volumes:
+  mydatabase:
+
 
 networks:
   my-net:
     external: true
+

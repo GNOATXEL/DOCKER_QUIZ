@@ -34,11 +34,14 @@ export class IdolComponent {
   rightAnswer: string = "";
   group: string = "";
   status: number = 0;
-  songPool: any[] = [];
-  YT: any;
+  round: number = 0;
+  stopping: number = 0;
   @ViewChild('inputField') inputField!: ElementRef;
 
   ngOnInit(): void {
+    this.api.post({
+      endpoint: '/song/count'
+    }).then(response => console.log('cc'))
     const request: Observable<any> = this.http.get(
       'http://localhost:3000/song',
       {observe: 'response'},
@@ -84,6 +87,7 @@ export class IdolComponent {
         let self = this;
         videoFrame.onload = function () {
           countdownTimer.textContent = `Loaded!`;
+          self.round += 1;
           self.inputField.nativeElement.focus();
           self.skipped = false;
           const timerInterval = setInterval(() => {
@@ -92,13 +96,24 @@ export class IdolComponent {
             if (seconds !== 0) {
               countdownTimer.textContent = `${seconds - 1}`;
             }
+            if (self.stopping === 1) {
+              clearInterval(timerInterval);
+              countdownTimer.textContent = ``;
+              videoFrame.classList.remove('hidden');
+              countdownTimer.style.display = 'none';
+              self.isNextClicked = false;
+              self.rightAnswer = self.dataSource[0].name;
+              self.stopping = 0;
+              return;
+            }
             if (seconds === 0 || self.skipped) {
+
+              videoFrame.classList.remove('hidden');
 
               setTimeout(() => {
                 clearInterval(timerInterval);
-                countdownTimer.textContent = ``;
-                videoFrame.classList.remove('hidden');
                 countdownTimer.style.display = 'none';
+                countdownTimer.textContent = ``;
 
                 self.isNextClicked = false;
                 self.skippable = true;
@@ -115,7 +130,7 @@ export class IdolComponent {
                   self.total += 1;
                   self.shiftenter = true;
                 }
-              }, 100);
+              }, 20);
 
             }
             ; // Actualise toutes les secondes
@@ -125,7 +140,7 @@ export class IdolComponent {
         this.answerValue = "";
         this.inputValue = '';
         this.starting = false;
-
+        self.stopping = 0;
 
       }
     });
@@ -182,10 +197,10 @@ export class IdolComponent {
 
   updateStatus(nb: number): void {
 
-    const nogi = document.getElementById('nogi') as HTMLButtonElement ;
-    const saku = document.getElementById('saku') as HTMLButtonElement ;
-    const hina = document.getElementById('hina') as HTMLButtonElement ;
-    const keya = document.getElementById('keya') as HTMLButtonElement ;
+    const nogi = document.getElementById('nogi') as HTMLButtonElement;
+    const saku = document.getElementById('saku') as HTMLButtonElement;
+    const hina = document.getElementById('hina') as HTMLButtonElement;
+    const keya = document.getElementById('keya') as HTMLButtonElement;
     if (nb === 1) {
       if (this.status % 10 === 0) {
         this.status += nb
@@ -222,5 +237,24 @@ export class IdolComponent {
     }
     console.log(this.status)
 
+  }
+
+  stop(): void {
+    this.nameSuggestions = [];
+    this.showSuggestions = false;
+    this.inputValue = '';
+    this.answerValue = '';
+    this.result = '';
+    this.isStartClicked = false;
+    this.isNextClicked = true;
+    this.skippable = true;
+    this.starting = true;
+    this.shiftenter = true;
+    this.guesses = 0;
+    this.total = 0;
+    this.skipped = false;
+    //this.status = 0;
+    this.round = 0;
+    this.stopping = 1;
   }
 }

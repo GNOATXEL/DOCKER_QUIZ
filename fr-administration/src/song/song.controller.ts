@@ -57,7 +57,7 @@ export class SongController {
         description: 'Song has been successfully returned'
     })
     async load(@Param() parameter): Promise<void> {
-        let filePath="../dataent.txt"
+        let filePath="dataent.txt"
         this.nogi=this.hina=this.keya=this.saku=this.cross=0;
         this.service.clear();
         let k = 0;
@@ -114,7 +114,19 @@ export class SongController {
 
     }
 
-
+    @Post('count')
+    @ApiCreatedResponse({
+        description: 'Song has been successfully returned'
+    })
+    async count(): Promise<void> {
+        const tab = await this.service.count();
+        this.nogi=tab[0];
+        this.saku=tab[1];
+        this.hina=tab[2];
+        this.keya=tab[3];
+        this.cross=tab[4]
+        console.log( [this.nogi,this.saku,this.hina,this.keya,this.cross])
+    }
 
 
 

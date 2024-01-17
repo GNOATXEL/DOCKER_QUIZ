@@ -1,7 +1,7 @@
 import {HttpException, HttpStatus, Injectable} from '@nestjs/common';
 import {InjectRepository} from "@nestjs/typeorm";
 import {User} from "../users/user.entity";
-import {Repository} from "typeorm";
+import {In, Not, Repository} from "typeorm";
 import {Song} from "./song.entity";
 import * as bcrypt from "bcrypt";
 
@@ -53,5 +53,16 @@ export class SongService {
             .getRawOne();
 
         return queryResult.maxId || 0; // Retourne 0 si aucun enregistrement trouvé
+    }
+
+
+    public async count(): Promise<number[]> {
+        let nogi = await this.songRepository.count({where:{group: 'Nogizaka46\r'}})
+        let saku = await this.songRepository.count({where:{group: 'Sakurazaka46\r'}})
+        let hina = await this.songRepository.count({where:{group: 'Hinatazaka46\r'}})
+        let keya = await this.songRepository.count({where:{group: 'Keyakizaka46\r'}})
+        let cross= await this.songRepository.count({where: {group:
+                    Not(In(['Nogizaka46\r', 'Keyakizaka46\r', 'Hinatazaka46\r', 'Sakurazaka46\r'])),},})
+        return [nogi,saku,hina,keya,cross];
     }
 }

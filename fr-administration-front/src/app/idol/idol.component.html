@@ -4,9 +4,9 @@
 <script src="https://www.youtube.com/iframe_api"></script>
 
 <div class="blabla">
-<div class="guesses">
-  <p>Points: {{ guesses }} / {{ total }}</p>
-</div>
+  <div class="guesses">
+    <p>Points: {{ guesses }} / {{ total }}</p>
+  </div>
 
   <div [ngClass]="{'green': result === 'correct', 'red': result === 'wrong', 'result': result !=='correct' && result!=='wrong'}">
     <p>Result: {{ result }}</p>
@@ -28,7 +28,7 @@
     <a *ngIf="!skippable" (click)="skip()"><button id="skip">Skip</button></a>
   </div>
   <div>
-    <a *ngIf="!isNextClicked" (click)="start()"><button id="next">Next</button></a>
+    <a *ngIf="!isNextClicked && round!=0" (click)="start()"><button id="next">Next</button></a>
   </div>
   <div class="answer">
     <a *ngIf="!isNextClicked">Answer: {{ rightAnswer }}</a>
@@ -42,19 +42,22 @@
      }">
     <a *ngIf="!isNextClicked" id="group">{{ group }}</a>
   </div>
+  <div>
+    <a *ngIf="round!=0" (click)="stop()"><button id="stop">Reset</button></a>
+  </div>
 </div>
 
 
 
 <div class="video-container">
   <p id="countdownTimer" style="display: none;" class="video"></p>
-  <iframe allow="autoplay *; fullscreen *" allowfullscreen="true" class="video" width="512" height="288" src="" id="videoFrame"></iframe>
+  <iframe allow="autoplay *" class="video" width="512" height="288" src="" id="videoFrame"></iframe>
 </div>
 
 <script src="script.js"></script>
 
 <div class="inputvalue">
-<p>{{ answerValue }}</p>
+  <p>{{ answerValue }}</p>
 </div>
 
 <!--<div class="input-container">-->

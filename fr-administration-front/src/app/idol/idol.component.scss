@@ -26,7 +26,7 @@ div {
 /* Styles pour aligner les boutons horizontalement */
 .buttons {
   display: flex;
-  margin-left: 33%;
+  margin-left: 34.6%;
 }
 
 
@@ -53,7 +53,7 @@ div {
   padding: 10px; /* Espacement intérieur */
   display: inline-block; /* Pour s'adapter à la largeur du contenu */
   min-width: 270px; /* Taille minimale */
-  max-width: 300px; /* Taille minimale */
+  max-width: 270px; /* Taille minimale */
   min-height: 35px; /* Taille minimale */
   box-sizing: border-box; /* Inclut la bordure dans la taille */
   font-weight: bold;
@@ -65,6 +65,10 @@ div {
   transition: min-width 0.3s ease; /* Animation de transition pour le changement de largeur */
 }
 
+#stop {
+  margin-left: 28%;
+}
+
 .group {
   padding: 12px 20px; /* Ajustez selon vos besoins */
   background-color: #8a2be2; /* Couleur violette */
@@ -73,6 +77,7 @@ div {
   text-align: center;
   //border: none;
   min-width: 100px;
+  max-height: 19px;
   border-radius: 6px;
   font-size: 16px; /* Taille de police */
   //cursor: pointer;
@@ -312,7 +317,7 @@ ul.suggestions button {
 }
 
 .buttongs {
-  margin-left: 550px;
+  margin-left: 36.95%;
 
 }
 
