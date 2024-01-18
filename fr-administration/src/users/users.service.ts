@@ -4,6 +4,9 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import * as bcrypt from 'bcrypt';
 import {Association} from "../associations/association.entity";
+import notificationConnexion from "../notification/Connection"
+import {sendNotification} from "../notification/Inotification";
+
 
 
 @Injectable()
@@ -13,21 +16,31 @@ export class UsersService {
     private userRepository: Repository<User>,
 ) {}
 
-  async create(lastname: string, firstname: string, age: number, password: string): Promise<User> {
-    if(lastname!=undefined && firstname!=undefined && age!=undefined && password!=undefined) {
-        const saltOrRounds = 10;
-        const hash = await bcrypt.hash(password, saltOrRounds);
+    async create(lastname: string, firstname: string, age: number, password: string): Promise<User> {
+        notificationConnexion.connect();
+        console.log("Dans le service");
+        if(lastname!=undefined && firstname!=undefined && age!=undefined && password!=undefined) {
+            const saltOrRounds = 10;
+            const hash = await bcrypt.hash(password, saltOrRounds);
 
-        const u = new User(lastname, firstname, age, hash);
-        await this.userRepository.save(u);
-        return u;
+            const u = new User(lastname, firstname, age, hash);
+            await this.userRepository.save(u);
+            const newNotification = {
+                titre: "nouvelle notification",
+                contenu:
+                    "*dring* *dring* tu a une notif",
+            };
+            //console.log("Dans le service");
+            notificationConnexion.connect();
+            sendNotification(newNotification);
+            return u;
+        }
+        else{
+            throw new HttpException(
+                `Incorrect parameters`,
+                HttpStatus.NOT_FOUND,
+            );}
     }
-    else{
-      throw new HttpException(
-          `Incorrect parameters`,
-          HttpStatus.NOT_FOUND,
-      );}
-  }
 
   public async getById(idToFind: number): Promise<User> {
   return await this.userRepository.findOne({where: {id: idToFind}});
