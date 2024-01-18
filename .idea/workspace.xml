@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecd7313d-7386-49ae-bacf-b46222505ab2" name="Changes" comment="db">
-      <change afterPath="$PROJECT_DIR$/fr-administration-front/nginx.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx/core.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx/frontend.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx/proxy.conf" afterDir="false" />
+    <list default="true" id="ecd7313d-7386-49ae-bacf-b46222505ab2" name="Changes" comment="delete nginx je crois">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fr-administration-front/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fr-administration/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration/src/main.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +78,7 @@
       <workItem from="1705108532492" duration="11000" />
       <workItem from="1705259796736" duration="932000" />
       <workItem from="1705260757265" duration="2481000" />
-      <workItem from="1705512098109" duration="13538000" />
+      <workItem from="1705512098109" duration="16168000" />
     </task>
     <task id="LOCAL-00001" summary="compose">
       <option name="closed" value="true" />
@@ -111,7 +104,23 @@
       <option name="project" value="LOCAL" />
       <updated>1705454702034</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="nginx de mort">
+      <option name="closed" value="true" />
+      <created>1705527830681</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1705527830681</updated>
+    </task>
+    <task id="LOCAL-00005" summary="delete nginx je crois">
+      <option name="closed" value="true" />
+      <created>1705528042845</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1705528042845</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,7 +131,9 @@
     <MESSAGE value="compose" />
     <MESSAGE value="SMQ" />
     <MESSAGE value="db" />
-    <option name="LAST_COMMIT_MESSAGE" value="db" />
+    <MESSAGE value="nginx de mort" />
+    <MESSAGE value="delete nginx je crois" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete nginx je crois" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
