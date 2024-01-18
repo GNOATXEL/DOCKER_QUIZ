@@ -19,7 +19,7 @@ export class AssociationsListComponent implements OnInit {
 
   ngOnInit(): void {
     const request: Observable<any> = this.http.get(
-      'http://localhost:3000/associations',
+      'http://localhost:8081/associations',
       { observe: 'response' },
     );
     request.subscribe({

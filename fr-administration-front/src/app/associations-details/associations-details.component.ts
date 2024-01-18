@@ -32,7 +32,7 @@ export class AssociationsDetailsComponent implements OnInit {
     });
 
     const request: Observable<any> = this.http.get(
-      'http://localhost:3000/associations/'+this.assoId,
+      'http://localhost:8081/associations/'+this.assoId,
       { observe: 'response' },
     );
     request.subscribe({
@@ -40,7 +40,7 @@ export class AssociationsDetailsComponent implements OnInit {
     });
 
     const requestU: Observable<any> = this.http.get(
-      'http://localhost:3000/associations/'+this.assoId+'/members',
+      'http://localhost:8081/associations/'+this.assoId+'/members',
       { observe: 'response' },
     );
     requestU.subscribe({
@@ -48,7 +48,7 @@ export class AssociationsDetailsComponent implements OnInit {
     });
 
     const requestH: Observable<any> = this.http.get(
-      'http://localhost:3000/associations/'+this.assoId+'/minutes',
+      'http://localhost:8081/associations/'+this.assoId+'/minutes',
       { observe: 'response' },
     );
     requestH.subscribe({

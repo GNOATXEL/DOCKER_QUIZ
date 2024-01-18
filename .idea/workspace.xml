@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecd7313d-7386-49ae-bacf-b46222505ab2" name="Changes" comment="delete nginx je crois">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/app/associations-details/associations-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/app/associations-details/associations-details.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/app/associations-list/associations-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/app/associations-list/associations-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/app/idol/idol.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/app/idol/idol.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/app/profile/profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/app/profile/profile.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/app/search/search.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/app/search/search.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/app/users-details/users-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/app/users-details/users-details.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/app/users-list/users-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/app/users-list/users-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/environments/environment.development.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/environments/environment.development.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration-front/src/services/api-helper.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration-front/src/services/api-helper.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

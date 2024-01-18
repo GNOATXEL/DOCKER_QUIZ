@@ -3,7 +3,7 @@ import { environment } from '../environments/environment';
 import { Observable, lastValueFrom } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 
-const base_url: string = 'http://localhost:3000';
+const base_url: string = 'http://localhost:8081';
 
 @Injectable({
   providedIn: 'root',

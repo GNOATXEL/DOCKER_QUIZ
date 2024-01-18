@@ -28,7 +28,7 @@ export class UsersDetailsComponent implements OnInit {
     });
 
     const request: Observable<any> = this.http.get(
-      'http://localhost:3000/users/'+this.userId,
+      'http://localhost:8081/users/'+this.userId,
       { observe: 'response' },
     );
     request.subscribe({
@@ -36,7 +36,7 @@ export class UsersDetailsComponent implements OnInit {
     });
 
     const requestA: Observable<any> = this.http.get(
-      'http://localhost:3000/users/'+this.userId+'/associations',
+      'http://localhost:8081/users/'+this.userId+'/associations',
       { observe: 'response' },
     );
     requestA.subscribe({

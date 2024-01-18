@@ -43,7 +43,7 @@ export class IdolComponent {
       endpoint: '/song/count'
     }).then(response => console.log('cc'))
     const request: Observable<any> = this.http.get(
-      'http://localhost:3000/song',
+      'http://localhost:8081/song',
       {observe: 'response'},
     );
     request.subscribe({
@@ -58,7 +58,7 @@ export class IdolComponent {
     this.isNextClicked = true;
     this.skippable = false;
     const request: Observable<any> = this.http.put(
-      'http://localhost:3000/song/roll/' + this.status,
+      'http://localhost:8081/song/roll/' + this.status,
       {observe: 'response'},
     );
 

@@ -31,7 +31,7 @@ export class SearchComponent implements OnInit {
     });
 
     const request: Observable<any> = this.http.get(
-      'http://localhost:3000/users/search/' + this.query,
+      'http://localhost:8081/users/search/' + this.query,
       {observe: 'response'},
     );
     request.subscribe({
@@ -39,7 +39,7 @@ export class SearchComponent implements OnInit {
     });
 
     const request2: Observable<any> = this.http.get(
-      'http://localhost:3000/associations/search/' + this.query,
+      'http://localhost:8081/associations/search/' + this.query,
       {observe: 'response'},
     );
     request2.subscribe({

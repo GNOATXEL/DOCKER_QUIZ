@@ -20,7 +20,7 @@ export class UsersListComponent implements OnInit {
 
   ngOnInit(): void {
     const request: Observable<any> = this.http.get(
-      'http://localhost:3000/users',
+      'http://localhost:8081/users',
       { observe: 'response' },
     );
     request.subscribe({

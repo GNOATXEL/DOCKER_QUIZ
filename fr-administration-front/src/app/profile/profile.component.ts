@@ -22,7 +22,7 @@ export class ProfileComponent implements OnInit {
   ngOnInit(): void {
     const id = this.service.getId()
     const request: Observable<any> = this.http.get(
-      'http://localhost:3000/users/'+id,
+      'http://localhost:8081/users/'+id,
       { observe: 'response' },
     );
     request.subscribe({
@@ -30,7 +30,7 @@ export class ProfileComponent implements OnInit {
     });
 
     const requestA: Observable<any> = this.http.get(
-      'http://localhost:3000/users/'+id+'/associations',
+      'http://localhost:8081/users/'+id+'/associations',
       { observe: 'response' },
     );
     requestA.subscribe({
