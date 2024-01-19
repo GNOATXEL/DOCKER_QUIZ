@@ -28,7 +28,7 @@ export class UsersService {
             const newNotification = {
                 titre: "nouvelle notification",
                 contenu:
-                    "*dring* *dring* tu a une notif",
+                    "*dring* *dring* tu a une notif parce que "+lastname +"a été ajouté",
             };
             //console.log("Dans le service");
             notificationConnexion.connect();

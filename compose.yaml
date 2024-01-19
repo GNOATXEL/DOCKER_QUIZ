@@ -54,7 +54,6 @@ services:
     image: rabbitmq:3.13-rc-management
     networks:
       - notification
-      - rabbitmq-quickstart-network
     ports:
       - "3307:3307"
       - 5672:5672
@@ -82,6 +81,5 @@ networks:
     external: false
   notification:
     external: false
-  rabbitmq-quickstart-network:
 
 

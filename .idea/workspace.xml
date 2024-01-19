@@ -4,24 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecd7313d-7386-49ae-bacf-b46222505ab2" name="Changes" comment="Ajout Notification RabbitMQ">
-      <change afterPath="$PROJECT_DIR$/Mailserveur/mailserver.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Mailserveur/setup.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curl" afterDir="false" />
+    <list default="true" id="ecd7313d-7386-49ae-bacf-b46222505ab2" name="Changes" comment="Ajout serveur web + fin readme, ajout soon des test/du rapport">
+      <change afterPath="$PROJECT_DIR$/Rapport_MARTIN_VINCENT.pdf" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/docker-data-mailing/dms/config/dovecot-quotas.cf" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/docker-data-mailing/dms/config/postfix-accounts.cf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-data-mailing/dms/mail-logs/mail.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-data-mailing/dms/mail-logs/mail.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-data-mailing/dms/mail-logs/mail.warn" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/docker-data-mailing/dms/mail-state/lib-dovecot/instances" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/docker-data-mailing/dms/mail-state/spool-postfix/pid/inet.submission" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/docker-data-mailing/dms/mail-state/spool-postfix/pid/inet.submissions" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/docker-data-mailing/dms/mail-state/spool-postfix/pid/master.pid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr-administration/src/users/users.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration/src/users/users.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +103,7 @@
       <workItem from="1705260757265" duration="2481000" />
       <workItem from="1705512098109" duration="16168000" />
       <workItem from="1705612123168" duration="12629000" />
-      <workItem from="1705691301652" duration="4691000" />
+      <workItem from="1705691301652" duration="8603000" />
     </task>
     <task id="LOCAL-00001" summary="compose">
       <option name="closed" value="true" />
@@ -159,7 +153,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705614137034</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Ajout serveur web + fin readme, ajout soon des test/du rapport">
+      <option name="closed" value="true" />
+      <created>1705697804238</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1705697804238</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,7 +175,8 @@
     <MESSAGE value="nginx de mort" />
     <MESSAGE value="delete nginx je crois" />
     <MESSAGE value="Ajout Notification RabbitMQ" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout Notification RabbitMQ" />
+    <MESSAGE value="Ajout serveur web + fin readme, ajout soon des test/du rapport" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout serveur web + fin readme, ajout soon des test/du rapport" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

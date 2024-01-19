@@ -3,12 +3,13 @@ Projet fini
 
 Ceci est le git de notre travail réalisé dans le cadre du module AL.
 
-Vous pourrez retrouver notre compte rendu dans le fichier Rapport.pdf à la racine du projet
+Vous pourrez retrouver notre compte rendu dans le fichier Rapport_MARTIN_VINCENT.pdf à la racine du projet
 
 Pour démarrer le programme 
 ```bash
 docker-compose up
 ```
+Toutes les informations sont dans le rapport
 
 l'architecture de notre projet :
 ```mermaid
