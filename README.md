@@ -76,6 +76,15 @@ Ce qu'il reste à faire :
 * Modifier une association (modification des rôles, par exemple).
 * Rechercher un utilisateur ou une association par son id
 
+## SMQ
+
+
+Axel (après la date de rendu de WM, sur le projet de WM) s'était amusé à faire un petit jeu de blind-test de musiques des groupes d'idols japonais de la Sakamichi Series (SMQ --> Sakamichi Music Quiz, technique), accessible depuis la barre de navigation. 
+Afin de pouvoir en profiter, il faut envoyer rentrer `curl.exe -X POST http://localhost:8081/song/load` dans un terminal, afin que la base de données se charge. Ensuite, le principe est simple, après avoir appuyé sur "Start" il faut deviner les titres des musiques (en caractères romains) qui passent et les rentrer dans le champ de réponse. À partir de 3 caractères entrés, 5 suggestions s'afficheront sous le champ de réponse si le titre existe dans la database (d'environ 500 musiques, taper par exemple "nak" affichera 5 noms contenant "nak" ), et il est possible de cliquer dessus ou de faire Tab + ENTREE.
+La database contient 4 groupes, les boutons en haut à droite permettent de choisir quels groupes peuvent jouer (ne rien cliquer met tout par défaut).
+
+
+
 ```mermaid
 graph TB
 
@@ -97,3 +106,6 @@ d --HTTP--> sq[Client]
 
 
 ```
+
+
+
