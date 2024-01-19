@@ -1,4 +1,3 @@
-
 # Projet Web d'Axel MARTIN et Théo VINCENT
 
 ## Introduction
@@ -56,8 +55,8 @@ Dans la section "Users List", vous pouvez ajouter un nouvel utilisateur en fourn
 Dans cette même section, il est possible d'accéder au information d'un utilisateur,il vous suffit de cliquer sur son id. Vous allez ainsi pouvoir voir ses informations et les modifier
 
 #### Association List
-Dans la section "Association List", vous trouverez la liste des associations et vous avez la possibilité d'en ajouter avec un nom.
-Dans cette même section, il est possible d'accéder au information d'une association (informations sur l'association, ses membres et ses minutes) ,il vous suffit de cliquer sur son id. Vous allez ainsi pouvoir voir ses informations
+Dans la section "Association List", vous trouverez la liste des associations et vous avez la possibilité d'en ajouter une en définissant son nom.
+Dans cette même section, il est possible d'accéder aux informations d'une association (informations sur l'association, ses membres et ses minutes), il vous suffit de cliquer sur son id. Vous allez ainsi pouvoir voir ses informations.
 
 ## Résumé
 
@@ -72,10 +71,10 @@ Les fonctionnalités disponibles en front-end sont les suivantes :
 * Ajouter un utilisateur.
 * Ajouter une association.
 
-Ce qui reste à faire :
+Ce qu'il reste à faire :
 
 * Modifier une association (modification des rôles, par exemple).
-* rechercher un utilisateur ou une association par son id
+* Rechercher un utilisateur ou une association par son id
 
 ```mermaid
 graph TB
