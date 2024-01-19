@@ -4,17 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecd7313d-7386-49ae-bacf-b46222505ab2" name="Changes" comment="delete nginx je crois">
-      <change afterPath="$PROJECT_DIR$/fr-administration/src/notification/Connection.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fr-administration/src/notification/Inotification.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="ecd7313d-7386-49ae-bacf-b46222505ab2" name="Changes" comment="Ajout Notification RabbitMQ">
+      <change afterPath="$PROJECT_DIR$/Mailserveur/mailserver.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mailserveur/setup.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-data-mailing/dms/config/dovecot-quotas.cf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-data-mailing/dms/config/postfix-accounts.cf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-data-mailing/dms/mail-logs/mail.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-data-mailing/dms/mail-logs/mail.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-data-mailing/dms/mail-logs/mail.warn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-data-mailing/dms/mail-state/lib-dovecot/instances" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-data-mailing/dms/mail-state/spool-postfix/pid/inet.submission" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-data-mailing/dms/mail-state/spool-postfix/pid/inet.submissions" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-data-mailing/dms/mail-state/spool-postfix/pid/master.pid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fr-administration/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fr-administration/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fr-administration/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fr-administration/src/users/users.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fr-administration/src/users/users.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,29 +45,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Users/axel/Git/wm-tp1",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/axel/Git/tp-al/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "ts.external.directory.path": "/home/theo/IdeaProjects/tp-al-trans/fr-administration/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/axel/Git/wm-tp1&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/axel/Git/tp-al/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/theo/IdeaProjects/tp-al-trans/fr-administration/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\axel\Git\tp-al\fr-administration-front" />
@@ -101,7 +108,8 @@
       <workItem from="1705259796736" duration="932000" />
       <workItem from="1705260757265" duration="2481000" />
       <workItem from="1705512098109" duration="16168000" />
-      <workItem from="1705612123168" duration="1902000" />
+      <workItem from="1705612123168" duration="12629000" />
+      <workItem from="1705691301652" duration="4691000" />
     </task>
     <task id="LOCAL-00001" summary="compose">
       <option name="closed" value="true" />
@@ -143,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705528042845</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Ajout Notification RabbitMQ">
+      <option name="closed" value="true" />
+      <created>1705614137034</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1705614137034</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,7 +172,8 @@
     <MESSAGE value="db" />
     <MESSAGE value="nginx de mort" />
     <MESSAGE value="delete nginx je crois" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete nginx je crois" />
+    <MESSAGE value="Ajout Notification RabbitMQ" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout Notification RabbitMQ" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

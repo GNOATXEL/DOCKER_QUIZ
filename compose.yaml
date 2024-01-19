@@ -54,6 +54,7 @@ services:
     image: rabbitmq:3.13-rc-management
     networks:
       - notification
+      - rabbitmq-quickstart-network
     ports:
       - "3307:3307"
       - 5672:5672
@@ -62,6 +63,15 @@ services:
     environment:
       RABBITMQ_DEFAULT_USER: myuser
       RABBITMQ_DEFAULT_PASS: mypassword
+
+  maildev:
+    image: maildev/maildev
+    networks:
+      - notification
+    ports:
+      - 1025:1025 #To connect to SMTP server
+      - 1080:1080 #View notifications on the page
+
 
 volumes:
   mydatabase:
@@ -72,4 +82,6 @@ networks:
     external: false
   notification:
     external: false
+  rabbitmq-quickstart-network:
+
 
